@@ -1,6 +1,4 @@
-const connection = require('../mysqlNODE.js')
-
-exports.useDatabase = function(name) {
+const useDatabase = function(name) {
     const sqlQuery = `USE ${name}`
     connection.query(sqlQuery, (err, res) => {
         if(err) console.error('Uh oh: 📛 ', err)
@@ -8,3 +6,6 @@ exports.useDatabase = function(name) {
         // console.log(`Query Passed: ${sqlQuery}`)
     })
 }
+
+
+/// Import connection??? How do I export it from mysqlNODE.js?
