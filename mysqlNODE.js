@@ -67,4 +67,4 @@ useDatabase('record_company');
 
 showResults('node_table');
 
-// Fuck
+// Fuck this.
